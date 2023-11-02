@@ -137,3 +137,208 @@ var PostSchema = new Schema({
     comments:[{type:Schema.Types.ObjectId,ref:'Comment'}]
 });
 module.exports = mongoose.model('Post',PostSchema);
+
+```
+
+## 3.2.2. Create a new comment
+    
+    ```bash
+    curl -X POST -H "Content-Type: application/json" -d '{"text":"My comment"}' http://localhost:3000/api/comments
+    ```
+        
+        ```json
+        {"message":"Comment Added"}
+        ```
+        
+        ```bash
+        curl -X POST -H "Content-Type: application/json" -d '{"text":"My comment"}' http://localhost:3000/api/comments
+        ```
+        
+        ```json
+        {"message":"Comment Added"}
+        ```
+        
+        ```bash
+        curl -X POST -H "Content-Type: application/json" -d '{"text":"My comment"}' http://localhost:3000/api/comments
+        ```
+        
+        ```json
+        {"message":"Comment Added"}
+        ```
+        
+        ```bash
+
+## 3.2.3. Get all comments
+        
+        ```bash
+        curl -X GET http://localhost:3000/api/comments
+        ```
+            
+            ```json
+            [{"_id":"58a6c5f1f36d282c7c7f8d1d","text":"My comment","__v":0},{"_id":"58a6c5f1f36d282c7c7f8d1e","text":"My comment","__v":0},{"_id":"58a6c5f1f36d282c7c7f8d1f","text":"My comment","__v":0}]
+            ```
+            
+            ```bash
+            curl -X GET http://localhost:3000/api/comments
+            ```
+            
+            ```json
+            [{"_id":"58a6c5f1f36d282c7c7f8d1d","text":"My comment","__v":0},{"_id":"58a6c5f1f36d282c7c7f8d1e","text":"My comment","__v":0},{"_id":"58a6c5f1f36d282c7c7f8d1f","text":"My comment","__v":0}]
+            ```
+            
+            ```bash
+            curl -X GET http://localhost:3000/api/comments
+            ```
+            
+            ```json
+            [{"_id":"58a6c5f1f36d282c7c7f8d1d","text":"My comment","__v":0},{"_id":"58a6c5f1f36d282c7c7f8d1e","text":"My comment","__v":0},{"_id":"58a6c5f1f36d282c7c7f8d1f","text":"My comment","__v":0}]
+            ```
+            
+            ```bash
+
+## 3.2.4. Get a comment by id
+            
+            ```bash
+            curl -X GET http://localhost:3000/api/comments/58a6c5f1f36d282c7c7f8d1d
+            ```
+                
+                ```json
+                {"_id":"58a6c5f1f36d282c7c7f8d1d","text":"My comment","__v":0}
+                ```
+                
+                ```bash
+                curl -X GET http://localhost:3000/api/comments/58a6c5f1f36d282c7c7f8d1d
+                ```
+                
+                ```json
+                {"_id":"58a6c5f1f36d282c7c7f8d1d","text":"My comment","__v":0}
+                ```
+                
+                ```bash
+                curl -X GET http://localhost:3000/api/comments/58a6c5f1f36d282c7c7f8d1d
+                ```
+                
+                ```json
+                {"_id":"58a6c5f1f36d282c7c7f8d1d","text":"My comment","__v":0}
+                ```
+                
+                ```bash
+
+## 3.2.5. Update a comment
+
+```bash
+curl -X PUT -H "Content-Type: application/json" -d '{"text":"My updated comment"}' http://localhost:3000/api/comments/58a6c5f1f36d282c7c7f8d1d
+```
+
+```json
+{"message":"Comment updated"}
+```
+
+```bash
+curl -X PUT -H "Content-Type: application/json" -d '{"text":"My updated comment"}' http://localhost:3000/api/comments/58a6c5f1f36d282c7c7f8d1d
+```
+
+```json
+{"message":"Comment updated"}
+```
+
+```bash
+curl -X PUT -H "Content-Type: application/json" -d '{"text":"My updated comment"}' http://localhost:3000/api/comments/58a6c5f1f36d282c7c7f8d1d
+```
+
+```json
+{"message":"Comment updated"}
+```
+
+```bash
+
+## 3.2.6. Delete a comment
+
+```bash
+curl -X DELETE http://localhost:3000/api/comments/58a6c5f1f36d282c7c7f8d1d
+```
+
+```json
+{"message":"Comment deleted"}
+```
+
+```bash
+curl -X DELETE http://localhost:3000/api/comments/58a6c5f1f36d282c7c7f8d1d
+```
+
+```json
+{"message":"Comment deleted"}
+```
+
+```bash
+curl -X DELETE http://localhost:3000/api/comments/58a6c5f1f36d282c7c7f8d1d
+```
+
+```json
+{"message":"Comment deleted"}
+```
+
+```bash
+
+## 3.2.7. Create a new post
+
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"text":"My post"}' http://localhost:3000/api/posts
+```
+
+```json
+{"message":"Post Added"}
+```
+
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"text":"My post"}' http://localhost:3000/api/posts
+```
+
+```json
+{"message":"Post Added"}
+```
+
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"text":"My post"}' http://localhost:3000/api/posts
+```
+
+```json
+{"message":"Post Added"}
+```
+
+```bash
+
+## 3.2.8. Get all posts
+
+```bash
+
+## 3.2.9. Get a post by id
+
+```bash
+
+## 3.2.10. Update a post
+
+```bash
+
+## 3.2.11. Delete a post
+
+```bash
+
+## 3.3. Test the API with Postman
+
+## 3.3.1. Create a new comment
+
+## 3.3.2. Get all comments
+
+## 3.3.3. Get a comment by id
+
+## 3.3.4. Update a comment
+
+## 3.3.5. Delete a comment
+
+## 3.3.6. Create a new post
+
+## 3.3.7. Get all posts
+
+## 3.3.8. Get a post by id
+
